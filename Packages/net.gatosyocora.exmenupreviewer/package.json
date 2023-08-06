@@ -1,8 +1,8 @@
 {
   "name": "net.gatosyocora.exmenupreviewer",
-  "displayName": "net.gatosyocora.exmenupreviewer",
-  "version": "0.0.1",
-  "description": "Describe this Package",
+  "displayName": "ExMenuPreviewer",
+  "version": "0.1.0",
+  "description": "Preview Tool Of VRChat Expression Menu in Unity",
   "dependencies": {},
   "gitDependencies": {},
   "vpmDependencies": {
@@ -15,5 +15,7 @@
   },
   "legacyFolders": {},
   "legacyFiles": {},
-  "localPath": "D:\\prog\\Unity\\Projects\\ExMenuPreviewer\\Packages\\net.gatosyocora.exmenupreviewer"
+  "localPath": "D:\\prog\\Unity\\Projects\\ExMenuPreviewer\\Packages\\net.gatosyocora.exmenupreviewer",
+  "type": "tool",
+  "unity": "2019.4"
 }
