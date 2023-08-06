@@ -5,8 +5,9 @@ using UnityEditor;
 using UnityEngine;
 using VRC.SDK3.Avatars.Components;
 using VRC.SDK3.Avatars.ScriptableObjects;
+using VRC.SDKBase;
 
-public class ExMenuPreviewer : MonoBehaviour
+public class ExMenuPreviewer : MonoBehaviour, IEditorOnly
 {
     [SerializeField]
     public VRCAvatarDescriptor avatarDescriptor;
@@ -26,6 +27,7 @@ public class ExMenuPreviewer : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     public void Update()
     {
         if (isPreview)
@@ -33,6 +35,7 @@ public class ExMenuPreviewer : MonoBehaviour
             EditorUtility.SetDirty(this);
         }
     }
+#endif
 
     public void Reset()
     {
@@ -71,6 +74,7 @@ public class ExMenuPreviewer : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     [CustomEditor(typeof(ExMenuPreviewer))]
     public class ExMenuPreviewerEditor : Editor
     {
@@ -424,4 +428,5 @@ public class ExMenuPreviewer : MonoBehaviour
             Other
         }
     }
+#endif
 }
