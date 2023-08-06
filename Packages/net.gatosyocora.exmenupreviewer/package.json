@@ -1,7 +1,7 @@
 {
   "name": "net.gatosyocora.exmenupreviewer",
   "displayName": "ExMenuPreviewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Preview Tool Of VRChat Expression Menu in Unity",
   "dependencies": {},
   "gitDependencies": {},
